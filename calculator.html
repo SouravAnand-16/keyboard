@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        body>h1{
+            color:blueviolet
+        }
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            width: auto;
+            height: auto;
+            padding: 40px;
+            gap: 20px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        }
+        .parent>div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-weight: 600;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #a{
+            grid-column: 1/span 4;
+        }
+        #c{
+            background-color: red;
+            color: white;
+        }
+        #operator{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div class="parent">
+         <div id="a"></div>
+        <!-- <div>b</div>
+         <div>c</div>
+         <div>d</div> -->
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>
+         <div id="operator">+</div>
+         <div>4</div>
+         <div>5</div>
+         <div>6</div>
+         <div id="operator">-</div>
+         <div>7</div>
+         <div>8</div>
+         <div>9</div>
+         <div id="operator">x</div>
+         <div id="c">C</div>
+         <div>0</div>
+         <div id="operator">=</div>
+         <div id="operator">/</div>
+    </div>
+</body>
+</html>
